@@ -61,7 +61,7 @@ const PRODUCTS = [
 
 export default function ProjectList() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12">
+    <div id="products" className="max-w-4xl mx-auto px-6 py-12">
       <div className="grid grid-cols-1 gap-6">
         {PRODUCTS.map((product, index) => {
           const waText = encodeURIComponent(`Bang Zeno Mau Beli File\n${product.title}\nRp ${product.price}`);

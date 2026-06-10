@@ -43,13 +43,13 @@ export default function Hero() {
           className="flex flex-col items-center justify-center gap-6"
         >
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
-            <button className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-red-600 text-white font-bold tracking-wide hover:bg-red-500 transition-colors flex items-center justify-center gap-2 group border border-red-500/50">
+            <a href="https://wa.me/6287729847454?text=Bang%20Zeno%20Mau%20Beli%20File" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-red-600 text-white font-bold tracking-wide hover:bg-red-500 transition-colors flex items-center justify-center gap-2 group border border-red-500/50">
               BUY FILE
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-colors font-mono hover:border-red-500/50">
-              EXPLORE PROJECTS
-            </button>
+            </a>
+            <a href="#products" className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-colors font-mono hover:border-red-500/50 uppercase text-center">
+              Lihat list produk
+            </a>
           </div>
 
           <div className="flex flex-col gap-4 w-full max-w-xl mx-auto mt-6 items-center sm:items-start">

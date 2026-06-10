@@ -5,19 +5,6 @@ export default function IntroScreen({ onComplete }: { onComplete: () => void }) 
   const [step, setStep] = useState<'playing' | 'done'>('playing');
 
   useEffect(() => {
-    // Delay voice to sync with the text animation (delay: 0.5s)
-    const voiceTimer = setTimeout(() => {
-      try {
-        const msg = new SpeechSynthesisUtterance("Welcome to zeno arena");
-        msg.lang = "en-US";
-        msg.pitch = 0.8;
-        msg.rate = 0.9;
-        window.speechSynthesis.speak(msg);
-      } catch (e) {
-        console.error("Speech synthesis failed", e);
-      }
-    }, 500);
-
     // 4 seconds duration before exiting
     const exitTimer = setTimeout(() => {
       setStep('done');
@@ -26,9 +13,7 @@ export default function IntroScreen({ onComplete }: { onComplete: () => void }) 
     }, 4000);
 
     return () => {
-      clearTimeout(voiceTimer);
       clearTimeout(exitTimer);
-      window.speechSynthesis.cancel(); // Stop speaking if unmounted early
     };
   }, [onComplete]);
 
