@@ -1,0 +1,8 @@
+{
+  "name": "FZHX ZENO",
+  "description": "Cyberpunk Project Marketplace with Neon Vibe and Animated Login",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
